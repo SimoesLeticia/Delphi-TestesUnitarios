@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3BC02462-AB50-4F4A-A587-2FEA847753BD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="prjQuickStats.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Test\prjQuickStatsTests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="prjQuickStats">
+        <MSBuild Projects="prjQuickStats.dproj"/>
+    </Target>
+    <Target Name="prjQuickStats:Clean">
+        <MSBuild Projects="prjQuickStats.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjQuickStats:Make">
+        <MSBuild Projects="prjQuickStats.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="prjQuickStatsTests">
+        <MSBuild Projects="Test\prjQuickStatsTests.dproj"/>
+    </Target>
+    <Target Name="prjQuickStatsTests:Clean">
+        <MSBuild Projects="Test\prjQuickStatsTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="prjQuickStatsTests:Make">
+        <MSBuild Projects="Test\prjQuickStatsTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="prjQuickStats;prjQuickStatsTests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="prjQuickStats:Clean;prjQuickStatsTests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="prjQuickStats:Make;prjQuickStatsTests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
