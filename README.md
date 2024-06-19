@@ -16,7 +16,7 @@ Em resumo, os testes unitários proporcionam segurança para realizar alteraçõ
 
 ## Pré-requisitos
 - Projeto desenvolvido no **Delphi Community Edition** versão 11.3.
-- É necessário ter o Framework **DUnit** instalado. Veja como instalá-lo [neste link](https://docwiki.embarcadero.com/RADStudio/Athens/en/DUnit_Overview).
+- É necessário ter o recurso **DUnit** instalado em seu ambiente. Veja como instalá-lo [neste link](https://docwiki.embarcadero.com/RADStudio/Athens/en/DUnit_Overview).
 
 ## Telas
 <img src="https://github.com/SimoesLeticia/Delphi-TestesAutomatizados/blob/main/src/assets/tela_04.png" width="32%"> <img src="https://github.com/SimoesLeticia/Delphi-TestesAutomatizados/blob/main/src/assets/tela_02.png" width="32%"> <img src="https://github.com/SimoesLeticia/Delphi-TestesAutomatizados/blob/main/src/assets/tela_03.png" width="32%">
