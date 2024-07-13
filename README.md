@@ -1,6 +1,6 @@
-# Delphi - Testes Unitários Automatizados
+# Delphi - Testes Unitários
 
-**QuickStats** foi desenvolvido para demonstrar de maneira simples e intuitiva o funcionamento de *testes unitários automatizados* em Delphi, utilizando o Framework **DUnit**. A aplicação realiza o cálculo de estatísticas descritivas básicas a partir de uma lista de números inteiros fornecida pelo usuário. As métricas calculadas incluem média, moda, mediana, variância, desvio padrão, amplitude, entre outras.
+**QuickStats** foi desenvolvido para demonstrar de maneira simples e intuitiva o funcionamento de *testes unitários* em Delphi, utilizando o Framework **DUnit**. A aplicação realiza o cálculo de estatísticas descritivas básicas a partir de uma lista de números inteiros fornecida pelo usuário. As métricas calculadas incluem média, moda, mediana, variância, desvio padrão, amplitude, entre outras.
 
 ## Importância do uso de Testes Unitários
 
